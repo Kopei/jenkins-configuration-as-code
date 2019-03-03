@@ -1,0 +1,17 @@
+{
+    "username": "jenkins_slave",
+    "home_dir": "/home/jenkins_slave",
+    "list_of_slaves": [{
+        "ip": "192.168.33.40",
+        "tag": "TPIPE",
+        "executors": 4,
+        "name": "nextcode-jenkins-slave",
+        "description": "Default slave brought up with 'vagrant up --provision' in nextcode-jenkins-slave role"
+    }, {
+        "ip": "1.2.3.4",
+        "tag": "TPIPE",
+        "name": "I-do-not-exist",
+        "executors": 2,
+        "description": "This is a mocked slave with fake IP address"
+    }]
+}
