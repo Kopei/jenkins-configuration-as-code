@@ -3,30 +3,7 @@ jenkins:
   - amazonEC2:
       cloudName: "ec2-agents"
       credentialsId: "jenkins-aws"
-      privateKey: |
-        -----BEGIN RSA PRIVATE KEY-----
-        MIIEpQIBAAKCAQEA3/BAzUN7YqynRKuGOHbMFMQaGCoURp0wTTzW1cEDwNZoBWNoYE0bvSU5Duwt
-        t2/n3LiyZh8F7asbefIRRlaoAuCvAyOlkmsIGDaO/igvRAOHG+7K7uX5arLI8qAPogF4OmCbCElv
-        CHykyePTckvZPiRtRiB1O7UPEx10ZHLXtUeLoV7xgKzA0W3T0Ils+It7tjuhp8yp66DXndC1ka77
-        M9Kv2BeM60l1iOfyHXzsBdiNUwvJokLsrdeog9bHFWKTi9Nx97ddG7G+NnB/r98Ua2s9q+ErwbMj
-        Q0cgn7YdNfOY7E88vP6amifg3iLEcvTKASTig9no/Ne6QUeYSfssGwIDAQABAoIBAQC6x2LlUbGp
-        /aOODRpoIf3aHC4/lWlP9G+DHIl7w/9jafFc/Srjl6zZOCC9J5SB+Z6EZLC3qIyDTUIflh1+c2yy
-        6cBPd/3zf75Co87kgZPawK6CR8uPMtWzfudIJuSjFWK4Hjdw0/7+LygrFBEatdS+lhdmdFATutKV
-        +O1JktgD49c4T14AQxLrCuDdOcIlziZbZ/c7Fkl4cOBIN591oI4OgimRRtqRYjajBmq2GOmLUhLK
-        l8rh1lqF3m0taEVf/0db9iqZ6n/+jhpnsFlsyXZKBR71rDsR2IXueo+ByDSOJRjN2DBMZBbttcpl
-        TjSq5CJTzRDgunfAlr0XjBo/qawRAoGBAPT/9d4k6wlFExvVBcZ3umdVWEAHldM9A7lR+5gnbVv9
-        +BrOqGGjR/ra+F/qr/Tvzi1GZ0+4gKh7OylyeNgtPUPMWgVH+XEJSkByn1CUwWgvnZ2EyqsKmxva
-        7+iyMMk3KTdhd8oe5AbNhLS0W7YiJYfQI+83iNCPqLpYOeMzIYNPAoGBAOn+NmaLn+g+tK0sQWJf
-        SF9etrCoHzaaQiVhtD1Ne15qjxiQ5vW9iO4ntO1+KDnluEHZIe0f66C61eGFgbNomNL4DRZTWBQ2
-        YZEqCo8UqHtGywbFIDjOmydcphhZ6b8VJBmJVplwjU2k4cdaqMh0OwQloqv9oW5SuHKJwtAE/Qd1
-        AoGARqHcclTWZe/CGI4LgjJWTSAvtxX4vdOjVTQrgqwrPRA1DRVzOeLnB41FefGhFM5l9GuNsVAR
-        14Dfh413BWvVc8xgT5F2en4hJ/9jqsmYEL9Zg2YbP8BpA1jVPZLRudDrUwoIjP7m4ocxsR8mKZYi
-        l8sL8RVjni0sibyRw8yj5sUCgYEAyzHdbdlL6HMjlMo8kT9q6p6mCOxGBrWYQTwCN8XkHw5r6wpR
-        9g48LYu/mwkVx4lMI6p5wqAYjwAQIYI9Kl3ncDTFsKB5eTvsKBIZDz0CPeMxBVUDcTFBHMJg3f6e
-        dDfYnHBeCmrp2gYXpnV84m3EngpMpAxhNhuRXq1wxhG+5M0CgYEApRL0OhK+RZ+po46BmWXFjBeC
-        zcwb+MMM4fZUvVbnUJn9+YZvTWPCA+EYVbzG+PmSPlBFP/OcEs8C2iMgY52jXIJwrUKcvu5ynfRI
-        kqcUTES5J1mMaASqoau/2hu+xJx6BSLUB5kqEXKz9TOJ0cu3KoeknY7Pllv6AA3UzsjllJs=
-        -----END RSA PRIVATE KEY-----
+      privateKey: "${EC2_PRIVATE_KEY}"
       region: "ap-southeast-1"
       templates:
       - ami: "ami-04c4518821aad93f7"
